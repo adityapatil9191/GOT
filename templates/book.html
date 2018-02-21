@@ -1,0 +1,23 @@
+
+	
+		<!--<div class="card" >
+		  
+		  <div class="card-body">
+		    <h4 class="card-title">{{book.name}}</h4>
+		    <p class="card-text">{{book.authors}}.</p>
+		    <p class="card-text">{{book.publisher}}.</p>
+		    
+		  </div>
+		</div>-->
+		<div class="card" ><img alt="Card image cap" class="card-img-top img-fluid" src="bookbackground.jpg" />
+		    
+		    <div class="card-block">
+
+		      <h4 class="card-title">{{book.name}}</h4>
+		      <p class="card-text">{{book.authors[0]}}.</p>
+		      <p class="card-text">Number Of Pages :{{book.numberOfPages}}.</p>
+		      <a class="btn btn-primary cardbutton" ng-click = "passValue(book.$$hashKey)"  ng-href = "#/view/{{book.$$hashKey}}">View Details</a>
+		 	</div>
+		 </div>
+		 <hr>
+	

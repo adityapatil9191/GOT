@@ -1,0 +1,43 @@
+/*!
+ * Start Bootstrap - Thumbnail Gallery (https://startbootstrap.com/template-overviews/thumbnail-gallery)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-thumbnail-gallery/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 54px;
+  
+
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.card-title{
+	text-align: center;
+}
+
+.card-text{
+	text-align: center;
+}
+
+.cardbutton{
+	margin-left: 25%;
+	margin-bottom: 5%;
+
+}
+
+.myText{
+	text-align: center;
+	color: white;
+}
+
+.card-img-top {
+    width: 100%;
+}
+
+
+

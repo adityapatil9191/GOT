@@ -1,0 +1,85 @@
+
+  <div class="container" ng-init = "getData()">
+
+        <h1 class="my-4 text-center text-lg-left myText" style = "text-align: center;"> G.O.T Cards</h1>
+         <h2 class="myText">Books Store</h2>
+          <select ng-model = "sortBook">
+            <option value = "name">Name Asc</option>
+            <option value = "authors">Authors Asc</option>
+            <option value = "numberOfPages">Pages Asc</option>  
+            
+          </select>
+          <select ng-model = "sortBook">
+            <option value = "-name">Name Desc</option>
+            <option value = "-authors">Authors Desc</option>
+            <option value = "-numberOfPages">Pages Desc</option>  
+            
+          </select>
+
+         <input type="text" placeholder="Search Books" ng-model = "booksearch">
+         <hr> 
+        <div class="row text-center text-lg-left">
+         
+         
+          <div class="col-lg-3 col-md-4 col-xs-6" ng-repeat = "book in books | filter:booksearch | orderBy:sortBook">
+             <book-card></book-card>
+             
+          </div>
+          <hr>
+           
+      </div>
+      <hr>
+      <hr>
+       <h3 class="myText">Character Store</h3>
+       <select ng-model = "sortCharacter">
+            <option value = "aliases[0]">Aliases Asc</option>
+            <option value = "gender">Gender Asc</option>
+              
+            
+        </select>
+        <select ng-model = "sortCharacter">
+            <option value = "-aliases[0]">Aliases Desc</option>
+            <option value = "-gender">Gender Desc</option>
+              
+            
+        </select>
+       <input type="text" placeholder="Search Character" ng-model = "charactersearch">
+         <hr>  
+      <div class="row text-center text-lg-left">
+          
+    
+           <div class="col-lg-3 col-md-4 col-xs-6" ng-repeat = "character in characters | filter:charactersearch | orderBy:sortCharacter">
+            
+             <character-card></character-card>
+            
+          </div>
+          <hr>
+      </div>
+      <hr>
+      <hr>
+      <h3 class="myText">House Store</h3>
+      <select ng-model = "sortHouse">
+            <option value = "name">name Asc</option>
+            <option value = "region">region Asc</option>
+              
+            
+        </select>
+        <select ng-model = "sortHouse">
+            <option value = "-name">name Desc</option>
+            <option value = "-region">region Desc</option>
+              
+            
+        </select>
+      <input type="text" placeholder="Search House" ng-model = "housesearch">
+         <hr>
+      <div class="row text-center text-lg-left">
+           
+           <div class="col-lg-3 col-md-4 col-xs-6" ng-repeat = "house in houses | filter:housesearch | orderBy : sortHouse">
+            
+             <house-card></house-card>
+          </div>
+          <hr> 
+      </div>
+      <hr>
+  </div>
+ 
